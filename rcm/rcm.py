@@ -60,7 +60,9 @@ class Rcm(object):
                       nb_max_char_per_class=7,
                       legend_w=300,
                       legend_bar_w=50,
-                      with_sliders=True
+                      with_sliders=True,
+                      symbol_plus="+",
+                      symbol_minus="-"
                       ):
         """Generates the HTML code that represents the current RCM"""
         env = Environment(
@@ -81,5 +83,7 @@ class Rcm(object):
             nb_max_char_per_class=nb_max_char_per_class,
             legend_w=legend_w,
             legend_bar_w=legend_bar_w,
-            with_sliders=with_sliders
+            with_sliders=with_sliders,
+            symbol_minus=symbol_minus,
+            symbol_plus=symbol_plus
         )

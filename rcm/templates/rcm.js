@@ -244,15 +244,15 @@ function draw_rcm_body(rcm_svg, rcm, params) {
                         if (Math.abs(rcm[j][i]) >= displayed_percentage_symbols_th) {
                             if (i == j) { // Diagonal cells
                                 if (rcm[j][i] > 0) {
-                                    return "+";
+                                    return "{{symbol_plus}}";
                                 } else {
-                                    return "-";
+                                    return "{{symbol_minus}}";
                                 }
                             } else { // Off-diagonal cells
                                 if (rcm[j][i] < 0) {
-                                    return "+";
+                                    return "{{symbol_plus}}";
                                 } else {
-                                    return "-";
+                                    return "{{symbol_minus}}";
                                 }
                             }
                         }
