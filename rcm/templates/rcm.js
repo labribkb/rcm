@@ -14,7 +14,9 @@ function main() {
         return;
     }
     draw_confusion_matrix();
+    {% if with_sliders %}
     add_sliders();
+    {% endif %}
 }
 
 
